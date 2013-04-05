@@ -60,6 +60,63 @@ const uint8_t ndef_msg[15] = {
     [txtLog scrollRangeToVisible:endRange];
 }
 
+- (IBAction) writeVCard:(id)sender
+{
+    NDEFMessage msg;
+    
+    NSOpenPanel *dialog = [NSOpenPanel openPanel];
+    dialog.canChooseFiles = YES;
+    dialog.canCreateDirectories = NO;
+    dialog.allowsMultipleSelection = NO;
+    
+    NSURL *selURL = nil;
+    
+    if ( [dialog runModal] == NSOKButton )
+    {
+        selURL = dialog.URL;
+    }
+    
+    if (selURL == nil) return;
+    
+    // Get the string from the file
+    NSString *fileContents = [NSString stringWithContentsOfURL:selURL
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:nil];
+    
+    QByteArray byteContents(fileContents.UTF8String);
+    msg.appendRecord(NDEFRecord::createMimeRecord(QString("text/x-vCard"), byteContents));
+    msg.appendRecord(NDEFRecord::createMimeRecord(QString("text/vcard"), byteContents));
+    msg.appendRecord(NDEFRecord::createMimeRecord(QString("text/directory;profile=vCard"), byteContents));
+	QByteArray output = msg.toByteArray();
+	write_ndef( (const uint8_t*) output.data(),output.size());
+	[self LogString: @"Wrote message\n"];
+}
 
+-(void)writeNDEF:(id)sender {
+    NDEFMessage msg;
+    
+    NSOpenPanel *dialog = [NSOpenPanel openPanel];
+    dialog.canChooseFiles = YES;
+    dialog.canCreateDirectories = NO;
+    dialog.allowsMultipleSelection = NO;
+    
+    NSURL *selURL = nil;
+    
+    if ( [dialog runModal] == NSOKButton )
+    {
+        selURL = dialog.URL;
+    }
+    
+    if (selURL == nil) return;
+    
+    // Get the string from the file
+    NSString *fileContents = [NSString stringWithContentsOfURL:selURL
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:nil];
+    
+    QByteArray output(fileContents.UTF8String);
+    write_ndef( (const uint8_t*) output.data(),output.size());
+	[self LogString: @"Wrote message\n"];
+}
 
 @end

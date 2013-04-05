@@ -21,6 +21,8 @@
 
 - (IBAction) formatTag: (id) sender;
 - (IBAction) writeURL: (id) sender;
+- (IBAction) writeVCard:(id)sender;
+- (IBAction) writeNDEF:(id)sender;
 
 - (void) LogString: (NSString*) s;
 

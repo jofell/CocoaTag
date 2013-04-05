@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* CocoaTagAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* CocoaTagAppDelegate.mm */; };
+		7846CC60170E84F90029588B /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7846CC5F170E84F90029588B /* QtCore.framework */; };
+		7846CC62170E856A0029588B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7846CC61170E856A0029588B /* CoreFoundation.framework */; };
+		7846CC64170E85790029588B /* PCSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7846CC63170E85790029588B /* PCSC.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		9E8A799B12988CF4002C2289 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8A799A12988CF4002C2289 /* CoreFoundation.framework */; };
 		9E8A79AC12988F94002C2289 /* MifareFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A79AB12988F94002C2289 /* MifareFormat.m */; };
-		9E9CC8291307523E00DA6F79 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9CC8281307523E00DA6F79 /* QtCore.framework */; };
 		9E9CC8C313075B8300DA6F79 /* ndefmessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CC8BF13075B8300DA6F79 /* ndefmessage.cpp */; };
 		9E9CC8C413075B8300DA6F79 /* ndefrecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CC8C013075B8300DA6F79 /* ndefrecord.cpp */; };
 		9E9CC8C513075B8300DA6F79 /* ndefrecordtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CC8C113075B8300DA6F79 /* ndefrecordtype.cpp */; };
 		9E9CC8C613075B8300DA6F79 /* tlv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CC8C213075B8300DA6F79 /* tlv.cpp */; };
 		9EC36329129C6C540039B8BB /* MifareURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC36328129C6C540039B8BB /* MifareURL.m */; };
-		9EE738C313072A27003EF62B /* PCSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE738C213072A27003EF62B /* PCSC.framework */; };
 		9EE738D113072A93003EF62B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9EE738D013072A93003EF62B /* README */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +35,13 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7846CC5F170E84F90029588B /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = "/Users/jofell/Desktop/CocoaTag-master/macosx10.6/../../../../../Library/Frameworks/QtCore.framework"; sourceTree = "<absolute>"; };
+		7846CC61170E856A0029588B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		7846CC63170E85790029588B /* PCSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PCSC.framework; path = /System/Library/Frameworks/PCSC.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* CocoaTag-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaTag-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CocoaTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E8A799A12988CF4002C2289 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9E8A79AA12988F94002C2289 /* MifareFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MifareFormat.h; sourceTree = "<group>"; };
 		9E8A79AB12988F94002C2289 /* MifareFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MifareFormat.m; sourceTree = "<group>"; };
-		9E9CC8281307523E00DA6F79 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = Library/Frameworks/QtCore.framework; sourceTree = SDKROOT; };
 		9E9CC8BF13075B8300DA6F79 /* ndefmessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ndefmessage.cpp; sourceTree = "<group>"; };
 		9E9CC8C013075B8300DA6F79 /* ndefrecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ndefrecord.cpp; sourceTree = "<group>"; };
 		9E9CC8C113075B8300DA6F79 /* ndefrecordtype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ndefrecordtype.cpp; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		9EC36324129C6BC80039B8BB /* LibFreefare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibFreefare.h; sourceTree = "<group>"; };
 		9EC36327129C6C540039B8BB /* MifareURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MifareURL.h; sourceTree = "<group>"; };
 		9EC36328129C6C540039B8BB /* MifareURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MifareURL.m; sourceTree = "<group>"; };
-		9EE738C213072A27003EF62B /* PCSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PCSC.framework; path = System/Library/Frameworks/PCSC.framework; sourceTree = SDKROOT; };
 		9EE738D013072A93003EF62B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,10 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7846CC64170E85790029588B /* PCSC.framework in Frameworks */,
+				7846CC62170E856A0029588B /* CoreFoundation.framework in Frameworks */,
+				7846CC60170E84F90029588B /* QtCore.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				9E8A799B12988CF4002C2289 /* CoreFoundation.framework in Frameworks */,
-				9EE738C313072A27003EF62B /* PCSC.framework in Frameworks */,
-				9E9CC8291307523E00DA6F79 /* QtCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +92,12 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EE738C213072A27003EF62B /* PCSC.framework */,
+				7846CC63170E85790029588B /* PCSC.framework */,
+				7846CC61170E856A0029588B /* CoreFoundation.framework */,
+				7846CC5F170E84F90029588B /* QtCore.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				9E8A799A12988CF4002C2289 /* CoreFoundation.framework */,
-				9E9CC8281307523E00DA6F79 /* QtCore.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -274,6 +274,7 @@
 				INFOPLIST_FILE = "CocoaTag-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = CocoaTag;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -288,6 +289,7 @@
 				INFOPLIST_FILE = "CocoaTag-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = CocoaTag;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
